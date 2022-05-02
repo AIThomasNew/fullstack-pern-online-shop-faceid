@@ -99,6 +99,10 @@
     text-transform: uppercase;
 }
 
+.headingColorBlack {
+    color: #000;
+}
+
 .spoon__img {
     width: 45px;
 }

@@ -66,7 +66,8 @@ h1 span:nth-child(even) {
     80%,
     90.1%,
     92% {
-        color: #0e3742;
+        /* color: #0e3742; */
+        color: #252c56;
         text-shadow: none;
     }
     18.1%,
@@ -80,10 +81,12 @@ h1 span:nth-child(even) {
     92.1%,
     100% {
         color: #fff;
-        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
-            0 0 80px #03bcf4, 0 0 160px #03bcf4, 0 0 400px #03bcf4;
+        text-shadow: 0 0 10px #0357f4, 0 0 20px #0357f4, 0 0 40px #0357f4,
+            0 0 80px #0357f4, 0 0 160px #0357f4, 0 0 400px #0357f4;
     }
 }
+
+/* #03bcf4 */
 
 .app__wrapper_h2 {
     position: absolute;

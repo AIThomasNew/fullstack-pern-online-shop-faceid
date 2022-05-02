@@ -7,10 +7,8 @@ import servicesPhoto3 from '../../assets/services/servicesPhoto3.jpg';
 
 const OurServices = () => {
     return (
-        <div className="OurServices">
-            <h1 className="headtext__cormorant__OurServices-black">
-                Наши услуги
-            </h1>
+        <div className="OurServices" id="services">
+            <h1 className="headtext__cormorant">Наши услуги</h1>
 
             <div className="container__services">
                 <div className="container__services-box">
@@ -21,9 +19,8 @@ const OurServices = () => {
                     <div className="content">
                         <h2>Design</h2>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa explicabo hic iure, sapiente inventore
-                            eius!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa explicabo hic iure, sapiente
+                            inventore eius!
                         </p>
                     </div>
                 </div>
@@ -35,9 +32,8 @@ const OurServices = () => {
                     <div className="content">
                         <h2>Design</h2>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa explicabo hic iure, sapiente inventore
-                            eius!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa explicabo hic iure, sapiente
+                            inventore eius!
                         </p>
                     </div>
                 </div>
@@ -49,9 +45,8 @@ const OurServices = () => {
                     <div className="content">
                         <h2>Design</h2>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa explicabo hic iure, sapiente inventore
-                            eius!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa explicabo hic iure, sapiente
+                            inventore eius!
                         </p>
                     </div>
                 </div>
@@ -63,9 +58,8 @@ const OurServices = () => {
                     <div className="content">
                         <h2>Design</h2>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa explicabo hic iure, sapiente inventore
-                            eius!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa explicabo hic iure, sapiente
+                            inventore eius!
                         </p>
                     </div>
                 </div>
@@ -77,9 +71,8 @@ const OurServices = () => {
                     <div className="content">
                         <h2>Design</h2>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa explicabo hic iure, sapiente inventore
-                            eius!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa explicabo hic iure, sapiente
+                            inventore eius!
                         </p>
                     </div>
                 </div>
@@ -91,12 +84,14 @@ const OurServices = () => {
                     <div className="content">
                         <h2>Design</h2>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa explicabo hic iure, sapiente inventore
-                            eius!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa explicabo hic iure, sapiente
+                            inventore eius!
                         </p>
                     </div>
                 </div>
+            </div>
+            <div className="container__price">
+                <p>Прайс</p>
             </div>
         </div>
     );

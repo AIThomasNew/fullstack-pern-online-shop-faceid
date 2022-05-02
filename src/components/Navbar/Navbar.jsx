@@ -21,10 +21,10 @@ const Navbar = () => {
                     <a href="#about">ОБО МНЕ</a>
                 </li>
                 <li className="p__opensans">
-                    <a href="#menu">ОБУЧЕНИЕ</a>
+                    <a href="#study">ОБУЧЕНИЕ</a>
                 </li>
                 <li className="p__opensans">
-                    <a href="#awards">УСЛУГИ</a>
+                    <a href="#services">УСЛУГИ</a>
                 </li>
                 <li className="p__opensans">
                     <a href="#contact">МАГАЗИН</a>
@@ -40,57 +40,35 @@ const Navbar = () => {
                 </a> */}
             </div>
 
+            {/* Для маленького экрана */}
             <div className="app__navbar-smallscreen">
-                <GiHamburgerMenu
-                    color="#fff"
-                    fontSize={27}
-                    onClick={() => setToggleMenu(true)}
-                />
+                <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
                 {toggleMenu && (
                     <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
-                        <VscChromeClose
-                            fontSize={27}
-                            className="overlay__close"
-                            onClick={() => setToggleMenu(false)}
-                        />
+                        <VscChromeClose fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
                         <ul className="app__navbar-smallscreen_links">
                             <li>
-                                <a
-                                    href="#home"
-                                    onClick={() => setToggleMenu(false)}
-                                >
+                                <a href="#home" onClick={() => setToggleMenu(false)}>
                                     Главная
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="#about"
-                                    onClick={() => setToggleMenu(false)}
-                                >
+                                <a href="#about" onClick={() => setToggleMenu(false)}>
                                     Обо мне
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="#menu"
-                                    onClick={() => setToggleMenu(false)}
-                                >
+                                <a href="#menu" onClick={() => setToggleMenu(false)}>
                                     Обучение
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="#awards"
-                                    onClick={() => setToggleMenu(false)}
-                                >
+                                <a href="#awards" onClick={() => setToggleMenu(false)}>
                                     Услуги
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="#contact"
-                                    onClick={() => setToggleMenu(false)}
-                                >
+                                <a href="#contact" onClick={() => setToggleMenu(false)}>
                                     Магазин
                                 </a>
                             </li>

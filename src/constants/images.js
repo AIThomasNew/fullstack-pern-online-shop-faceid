@@ -21,6 +21,7 @@ import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import faceid from '../assets/faceid.png';
+
 import irina from '../assets/irina.jpg';
 import irina2 from '../assets/irina2.jpg';
 

@@ -1,24 +1,12 @@
 .OurServices {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 1000px;
-    /* background: var(--color-white); */
-    background: rgb(218, 218, 218);
-    /* border: 1px solid silver; */
-}
-
-.headtext__cormorant__OurServices-black {
-    font-family: var(--font-base);
-    color: var(--color-black);
-    font-size: 45px;
-    line-height: 80.2px;
-    letter-spacing: 0.04em;
-    text-transform: capitalize;
-    font-weight: 500;
-    text-transform: uppercase;
+    height: 1100px;
+    background: rgb(202, 202, 202);
+    padding-top: 100px;
 }
 
 .container__services {
@@ -29,7 +17,7 @@
     gap: 20px;
     flex-wrap: wrap;
     width: 1200px;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .container__services .container__services-box {
@@ -37,7 +25,6 @@
     width: 300px;
     height: 280px;
     background: var(--color-silver);
-    /* background: rgb(12, 30, 70); */
     border-radius: 20px;
     overflow: hidden;
 }
@@ -55,7 +42,7 @@
     z-index: 2;
 }
 
-.icon-1 {
+/* .icon-1 {
     background: var(--color-silver);
 }
 .icon-2 {
@@ -72,13 +59,13 @@
 }
 .icon-6 {
     background: var(--color-blue);
-}
+} */
 
 /* .imageService {
     height: 80px;
 } */
 
-.container__services .container__services-box:hover .imageService  {
+.container__services .container__services-box:hover .imageService {
     top: 30px;
     left: calc(50% - 40px);
     width: 80px;
@@ -92,7 +79,7 @@
     transition: 0.5s;
 }
 
-.container__services .container__services-box:hover .imageService  ion-icon {
+.container__services .container__services-box:hover .imageService ion-icon {
     font-size: 2em;
 }
 
@@ -124,4 +111,47 @@
 .container__services .container__services-box .content p {
     font-weight: 300;
     line-height: 1.5em;
+}
+
+.container__price {
+    margin-top: 60px;
+    width: 250px;
+    height: 70px;
+    border-radius: 12px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.18);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    border-radius: 20px;
+    color: var(--color-silver);
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    background-color: #fff;
+}
+
+.container__price::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--color-red);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+.container__price:hover::before {
+    width: 100%;
+}
+.container__price:hover {
+    color: #fff;
 }

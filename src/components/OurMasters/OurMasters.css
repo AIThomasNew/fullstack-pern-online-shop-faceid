@@ -1,0 +1,127 @@
+.OurMasters {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 1200px;
+    font-family: var(--font-base);
+    color: #fff;
+    /* overflow: hidden; */
+    padding-top: 100px;
+    /* background-color: var(--color-red); */
+}
+
+.OurMasters__cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    margin-top: 100px;
+}
+
+.OurMasters__cards .OurMasters__card-Master {
+    position: relative;
+    width: 660px;
+    height: 350px;
+    margin: 40px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.OurMasters__cards .OurMasters__card-Master .imageMasters {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    transition: 0.5s;
+}
+
+.OurMasters__cards .OurMasters__card-Master:hover .imageMasters {
+    left: 73%;
+    height: 500px;
+}
+
+.OurMasters__cards .OurMasters__card-Master .OurMasters__card-Masters-content {
+    position: relative;
+    width: 45%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.OurMasters__cards .OurMasters__card-Master:hover .OurMasters__card-Masters-content {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.OurMasters__cards .OurMasters__card-Master .OurMasters__card-Masters-content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+}
+
+.OurMasters__cards .OurMasters__card-Master .OurMasters__card-Masters-content a {
+    position: relative;
+    color: #111;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+    .OurMasters__cards .OurMasters__card-Master {
+        width: auto;
+        max-width: 600px;
+        align-items: flex-start;
+    }
+    .OurMasters__cards .OurMasters__card-Master:hover {
+        height: 600px;
+    }
+    .OurMasters__cards .OurMasters__card-Master:hover .imageMasters {
+        left: 50%;
+        height: 350px;
+    }
+    .OurMasters__cards .OurMasters__card-Master .OurMasters__card-Masters-content {
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .OurMasters__cards {
+        flex-direction: column;
+    }
+    .OurMasters__cards .OurMasters__card-Master {
+        margin: 40px 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .OurMasters__cards .OurMasters__card-Master .OurMasters__card-Masters-content {
+        padding: 30px;
+    }
+    .OurMasters__cards .OurMasters__card-Master:hover .imageMasters {
+        height: 300px;
+    }
+}
