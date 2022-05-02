@@ -4,6 +4,7 @@ import masterAnna from '../../assets/masters/masterAnna.png';
 import masterLilia from '../../assets/masters/masterLilia.png';
 import masterNasty from '../../assets/masters/masterNasty.png';
 import masterStefania from '../../assets/masters/masterStefania.png';
+
 import './OurMasters.css';
 
 const OurMasters = () => {

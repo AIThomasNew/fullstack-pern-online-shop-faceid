@@ -1,40 +1,34 @@
 import React from 'react';
 import './App.css';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
-import { Header, AboutUs, Study, OurServices, Footer } from './container';
+import { Layout } from './components/Layout/Layout';
 
-import Navbar from './components/Navbar/Navbar.jsx';
-// import { OurMasters } from './components/OurMasters/OurMasters.jsx';
+import Home from './components/Home/Home.jsx';
+import Study from './components/Study/Study.jsx';
+import OurServices from './components/OurServices/OurServices.jsx';
+import OurMasters from './components/OurMasters/OurMasters.jsx';
 
-// const App = () => (
-//     <div>
-//         <Routes>
-//             <Route path="/" element={<Navbar />} />
-//             <Route path="/header" element={<Header />} />
-//             <Route path="/about" element={<AboutUs />} />
-//             <Route path="/study" element={<Study />} />
-//             <Route path="/services" element={<OurServices />} />
-//             <Route path="/footer" element={<Footer />} />
-//         </Routes>
-//     </div>
-// );
-
-// export default App;
+import Online from './components/Study/Online/Online.jsx';
+import FullTime from './components/Study/FullTime/FullTime.jsx';
+import Info from './components/Info/Info.jsx';
 
 const App = () => (
     <div>
-        <Navbar />
-        <Header />
-        <AboutUs />
-        <Study />
-        <OurServices />
+        <Routes>
+            <Route path="/" element={<Layout />}>
+                <Route index element={<Home />} />
+                <Route path="study" element={<Study />} />
+                <Route path="services" element={<OurServices />} />
+                <Route path="price" element={<OurMasters />} />
+                {/* <Route path="shop" element={<Shop />} /> */}
+                {/* <Route path="login" element={<Login />} /> */}
 
-        {/* <Routes>
-<Route path="/ourmasters" element={<OurMasters />} />
-</Routes> */}
-
-        <Footer />
+                <Route path="info" element={<Info />} />
+                <Route path="online" element={<Online />} />
+                <Route path="fulltime" element={<FullTime />} />
+            </Route>
+        </Routes>
     </div>
 );
 

@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import VanillaTilt from 'vanilla-tilt';
 import './Study.css';
 import irinaStudy from '../../assets/masters/irinaStudy.png';
+import { NavLink } from 'react-router-dom';
 
 function Tilt(props) {
     const { options, ...rest } = props;
@@ -23,21 +24,20 @@ const Study = () => {
     return (
         <div className="Study" id="study">
             <div className="study__content">
-                <div className="study__header">
-                    <div className="anim-line"></div>
+                {/* <div className="study__header">
                     <h1 className=" headtext__cormorant_study">Обучающие курсы</h1>
-                </div>
+                </div> */}
 
                 <div className="study__cards-courses">
                     <Tilt className="tilt" options={options}>
-                        <div className="box box__1">
+                        <NavLink to="/online" className="box box__1">
                             <p>ONLINE ОБУЧЕНИЕ</p>
-                        </div>
+                        </NavLink>
                     </Tilt>
                     <Tilt className="tilt" options={options}>
-                        <div className="box box__2">
+                        <NavLink to="/fulltime" className="box box__2">
                             <p>ОЧНОЕ ОБУЧЕНИЕ</p>
-                        </div>
+                        </NavLink>
                     </Tilt>
                 </div>
 
