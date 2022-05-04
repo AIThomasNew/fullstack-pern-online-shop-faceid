@@ -12,7 +12,7 @@ const AboutUs = () => {
     const carousel2 = useRef();
 
     useEffect(() => {
-        setWidth(carousel.current.scrollWidth / 10 + carousel.current.offsetWidth);
+        setWidth(carousel.current.scrollWidth / 11 + carousel.current.offsetWidth);
     }, []);
     useEffect(() => {
         setWidth2(carousel2.current.scrollWidth / 0.9 - carousel2.current.offsetWidth);
