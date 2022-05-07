@@ -13,6 +13,7 @@ import Online from './components/Study/Online/Online.jsx';
 import FullTime from './components/Study/FullTime/FullTime.jsx';
 import Info from './components/Info/Info.jsx';
 import { Scroll } from './components/Scroll/ScrollToTop';
+import Entry from './components/Entry/Entry.jsx';
 
 const App = () => (
   <>
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="study" element={<Study />} />
           <Route path="services" element={<OurServices />} />
           <Route path="price" element={<OurMasters />} />
+          <Route path="entry" element={<Entry />} />
           {/* <Route path="shop" element={<Shop />} /> */}
           {/* <Route path="login" element={<Login />} /> */}
 

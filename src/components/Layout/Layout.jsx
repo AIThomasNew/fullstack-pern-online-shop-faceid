@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import { Scroll } from '../Scroll/ScrollToTop';
+// import { Scroll } from '../Scroll/ScrollToTop';
 
 const Layout = () => {
   return (
@@ -11,7 +11,7 @@ const Layout = () => {
       <Navbar />
 
       <Outlet />
-      <Scroll showBelow={250} />
+      {/* <Scroll showBelow={250} /> */}
 
       <Footer />
     </div>

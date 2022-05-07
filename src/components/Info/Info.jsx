@@ -1,7 +1,19 @@
 import React from 'react';
 
 const Info = () => {
-    return <div></div>;
+
+//     var pathToFile = "....";
+//          downloadFile(file) {
+//     location.href = pathToFile + file;
+// }
+
+
+return <div>
+
+
+
+
+    </div>;
 };
 
 export default Info;

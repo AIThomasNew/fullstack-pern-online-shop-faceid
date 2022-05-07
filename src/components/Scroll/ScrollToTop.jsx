@@ -1,33 +1,41 @@
 import { useEffect, useState } from 'react';
 import './ScrollToTop.css';
+import { BsArrowUp } from 'react-icons/bs';
+import { useWindowScroll } from 'react-use';
 
-export const Scroll = (showBelow) => {
-  const [show, setShow] = useState(showBelow ? false : true);
-
-  const handleScroll = () => {
-    if (window.pageYOffset > showBelow) {
-      if (!show) setShow(true);
-    } else {
-      if (show) setShow(false);
-    }
-  };
+export const Scroll = () => {
+  const { y: pageYOffset } = useWindowScroll();
+  const [visible, setVisibility] = useState(false);
 
   useEffect(() => {
-    if (showBelow) {
-      window.addEventListener(`scroll`, handleScroll);
-      return () => window.removeEventListener(`scroll`, handleScroll);
+    if (pageYOffset > 400) {
+      setVisibility(true);
+    } else {
+      setVisibility(false);
     }
-  });
+  }, [pageYOffset]);
 
-  const handleClick = () => {
-    window[`scrollTo`]({ top: 0, behavior: `smooth` });
-  };
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  if (!visible) {
+    return false;
+  }
 
   return (
-    <div className="ScrollContainer">
-      <button className="scroll" onClick={handleClick}>
-        Вверх
+    <div className="scroll-to-top">
+      <button className="scroll" onClick={scrollToTop}>
+        <BsArrowUp className="i"></BsArrowUp>
       </button>
     </div>
   );
 };
+
+// export const Scroll = () => {
+//   return (
+//     <div className="scroll-to-top">
+//       <button className="scroll">
+//         <BsArrowUp className='i'></BsArrowUp>
+//       </button>
+//     </div>
+//   );
+// };
