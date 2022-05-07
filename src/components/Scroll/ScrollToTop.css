@@ -1,0 +1,11 @@
+.scroll {
+  position: fixed;
+  z-index: 2;
+  bottom: 2vh;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #dcdcdc;
+  color: black;
+  right: 5%;
+}
